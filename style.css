@@ -1,19 +1,27 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Norse-Bold'), url('/fonts/Norse-Bold.otf') format('opentype');
+}
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 0;
-    margin-bottom:0;
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: black;
+    margin: 0;
 }
 
 .content_container {
     display: flex;
-    min-height: 100vh;
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
 }
 
+/* ********** */
+/* LEFT SIDE */
 .leftSide {
-    min-width: 50%;
+    width: 40vw;
     background-position: center center;
     background-image: url(/assets/manuel-cosentino--Pa3sdVapeA-unsplash.jpg);
     background-size: cover;
@@ -27,11 +35,12 @@ body {
 
 .leftSide img {
     margin:auto;
-   height: 50px;
-   margin-right: 0;
+    height: 50px;
+    margin-right: 0;
 }
 
 .banner {
+    font-family: "Norse-Bold";
     margin: auto;
     display: flex;
     background: rgba(0,0,0,0.5);
@@ -47,8 +56,87 @@ body {
     font-size: 40px;
 }
 
-
+/* ********** */
+/* RIGHT SIDE */
 .rightSide {
+    width: 60vw; 
+    min-width: 400px;  /* Prevents collapsing too much */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto; /* Allows scrolling within rightSide */
+    gap: 0;
+    justify-content:space-evenly;
+}
+
+.top_section {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: auto;
+}
+
+.textWrapper {
+    margin-top: auto;
+}
+
+.form_section {
     background-color: white;
 }
 
+.bottom_section {
+    padding: 3em;
+}
+
+.form {
+    background-color: rgb(246, 245, 244);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 3em;
+}
+
+.form_item {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 1.5em;
+    font-size: 1.15em;
+    border: #E5E7EB solid;
+}
+
+input:focus { 
+    border: blue solid 1px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Soft gray */
+}
+
+label {
+    font-weight: 500;
+    opacity: .65;
+}
+
+.form_section, .bottom_section {
+    flex-shrink: 0;  /* Prevents shrinking */
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 1em;
+    width: 15em;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+    opacity: .75;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.password:invalid {
+    border: red;
+}

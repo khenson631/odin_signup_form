@@ -17,22 +17,46 @@
 
         <div class="rightSide">
             <section class="top_section">
-                <H1>This is not a real online service! You need to know something like this in your life to help you 
-                realize your deepest dreams. 
-                <br> Sign up <em> now </em> to get started.
-                <br><br> You <em>know</em> you want to.
-                </H1>   
+                <div class="textWrapper">
+                    <H1>This is not a real online service! You need to know something like this in your life to help you 
+                    realize your deepest dreams. 
+                    <br> Sign up <em> now </em> to get started.
+                    <br><br> You <em>know</em> you want to.
+                    </H1>   
+                </div>
             </section>
             <section class="form_section">
-                <form action="get">
-                    <label for="firstName">FIRST NAME</label>
-                    <input type="text" name="firstName" id="firstName">
+                <form action="#" class="form">
+                    <div class="form_item">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" name="firstName" id="firstName" required placeholder="First Name">
+                    </div> 
+                    <div class="form_item">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" name="lastName" id="lastName" required placeholder="Last Name">
+                    </div> 
+
+                    <div class="form_item">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required placeholder="Email">
+                    </div>
+                    <div class="form_item">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone" required placeholder="Phone Number">
+                    </div>                
+                    <div class="form_item">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" class="password" required placeholder="Password">
+                    </div>
+                    <div class="form_item">
+                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" class="password" required placeholder="Confirm password">
+                    </div>
                 </form>
             </section>
             <section class="bottom_section">
-                <button>Create Account</button>
-                <p>Already have an account?</p>
-                <a href="https://www.example.com" target="_blank">Log in</a>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="https://www.example.com" target="_blank">Log in</a></p>
             </section>
         </div>
     </div>
