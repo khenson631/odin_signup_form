@@ -104,7 +104,6 @@ body {
 
 input {
     height: 1.5em;
-    font-size: 1.15em;
     border: #E5E7EB solid;
 }
 
@@ -115,6 +114,7 @@ input:focus {
 
 label {
     font-weight: 500;
+    font-size: .8em;
     opacity: .65;
 }
 
@@ -122,7 +122,7 @@ label {
     flex-shrink: 0;  /* Prevents shrinking */
 }
 
-button {
+.submit_button {
     background-color: #596D48;
     color: white;
     padding: 1em;
@@ -133,10 +133,12 @@ button {
     opacity: .75;
 }
 
-button:hover {
+.submit_button:hover {
     opacity: 1;
+    cursor:pointer;
 }
 
 .password:invalid {
     border: red;
 }
+
