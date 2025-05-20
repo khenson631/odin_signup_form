@@ -2,7 +2,7 @@
     font-family: 'Norse-Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Norse-Bold'), url('/fonts/Norse-Bold.otf') format('opentype');
+    src: local('Norse-Bold'), url('fonts/Norse-Bold.otf') format('opentype');
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 .leftSide {
     width: 40vw;
     background-position: center center;
-    background-image: url(/assets/manuel-cosentino--Pa3sdVapeA-unsplash.jpg);
+    background-image: url(assets/manuel-cosentino--Pa3sdVapeA-unsplash.jpg);
     background-size: cover;
     flex: 3;
     display: flex;
