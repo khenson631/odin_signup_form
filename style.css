@@ -23,7 +23,7 @@ body {
 .leftSide {
     width: 40vw;
     background-position: center center;
-    background-image: url(assets/manuel-cosentino--Pa3sdVapeA-unsplash.jpg);
+    background-image: url(assets/manuel-cosentino--Pa3sdVapeA-unsplash_evenSMaller.jpg);
     background-size: cover;
     flex: 3;
     display: flex;
@@ -58,6 +58,10 @@ body {
 
 /* ********** */
 /* RIGHT SIDE */
+h2 {
+    font-size: 1.5em;
+}
+
 .rightSide {
     width: 60vw; 
     min-width: 400px;  /* Prevents collapsing too much */
@@ -67,6 +71,9 @@ body {
     overflow-y: auto; /* Allows scrolling within rightSide */
     gap: 0;
     justify-content:space-evenly;
+    color: var(--text-light);
+    background: #020612;
+    background: linear-gradient(90deg, rgba(2, 6, 18, 1) 0%, rgb(24, 9, 85) 50%, rgba(2, 6, 18, 1) 100%);
 }
 
 .top_section {
@@ -81,10 +88,6 @@ body {
     margin-top: auto;
 }
 
-.form_section {
-    background-color: white;
-}
-
 .bottom_section {
     padding: 3em;
     display: flex;
@@ -95,11 +98,11 @@ body {
 }
 
 .form {
-    background-color: rgb(246, 245, 244);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 3em;
+    padding-bottom: 0;
 }
 
 .form_item {
@@ -110,6 +113,7 @@ body {
 input {
     height: 1.5em;
     border: #E5E7EB solid 1px;
+    font-size: 1em;
 }
 
 input:focus { 
@@ -119,8 +123,9 @@ input:focus {
 
 label {
     font-weight: 500;
-    font-size: .8em;
+    font-size: .9em;
     opacity: .65;
+    padding-bottom: .5em;
 }
 
 .form_section, .bottom_section {
@@ -146,4 +151,3 @@ label {
 .password:invalid {
     border: 1px solid red;
 }
-
