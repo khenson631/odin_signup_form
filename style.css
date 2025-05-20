@@ -2,7 +2,7 @@
     font-family: 'Norse-Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Norse-Bold'), url('/fonts/Norse-Bold.otf') format('opentype');
+    src: local('Norse-Bold'), url('fonts/Norse-Bold.otf') format('opentype');
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 .leftSide {
     width: 40vw;
     background-position: center center;
-    background-image: url(/assets/manuel-cosentino--Pa3sdVapeA-unsplash.jpg);
+    background-image: url(assets/manuel-cosentino--Pa3sdVapeA-unsplash.jpg);
     background-size: cover;
     flex: 3;
     display: flex;
@@ -87,6 +87,11 @@ body {
 
 .bottom_section {
     padding: 3em;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    flex-grow: 1;
+    padding-top: 1em;
 }
 
 .form {
@@ -109,7 +114,7 @@ input {
 
 input:focus { 
     border: blue solid 1px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Soft gray */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  Soft gray
 }
 
 label {
@@ -119,7 +124,7 @@ label {
 }
 
 .form_section, .bottom_section {
-    flex-shrink: 0;  /* Prevents shrinking */
+    flex-shrink: 0;
 }
 
 .submit_button {
