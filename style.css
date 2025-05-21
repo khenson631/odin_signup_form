@@ -1,3 +1,7 @@
+:root {
+    --text-light:rgb(202, 201, 201);
+}
+
 @font-face {
     font-family: 'Norse-Bold';
     font-style: normal;
@@ -29,7 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: white;
+    color: var(--text-light);
     text-align: center;
 }
 
@@ -73,7 +77,7 @@ h2 {
     justify-content:space-evenly;
     color: var(--text-light);
     background: #020612;
-    background: linear-gradient(90deg, rgba(2, 6, 18, 1) 0%, rgb(24, 9, 85) 50%, rgba(2, 6, 18, 1) 100%);
+    background: linear-gradient(90deg, rgba(2, 6, 18, 1) 0%, rgb(21, 8, 72) 50%, rgba(2, 6, 18, 1) 100%);
 }
 
 .top_section {
@@ -133,7 +137,7 @@ label {
 }
 
 .submit_button {
-    background-color: #596D48;
+    background-color: #3a3af7;
     color: white;
     padding: 1em;
     width: 15em;
